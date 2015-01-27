@@ -164,7 +164,6 @@ install_npm() {
 }
 
 build_gulp() {
-  (
   if [ -f $build_dir/gulpfile.js ]; then
     # get the env vars
     if [ -d "$env_dir" ]; then
@@ -179,7 +178,6 @@ build_gulp() {
   else
     echo "-----> No gulpfile found"
   fi
-)
 }
 
 function build_dependencies() {
