@@ -167,7 +167,7 @@ build_gulp() {
   if [ -f $build_dir/gulpfile.js ]; then
     # get the env vars
     if [ -d "$env_dir" ]; then
-      status "Exporting config vars to environment"
+      info "Exporting config vars to environment"
       export_env_dir $env_dir
     fi
 
