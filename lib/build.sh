@@ -163,6 +163,10 @@ install_npm() {
   fi
 }
 
+build_gulp() {
+  gulp build
+}
+
 function build_dependencies() {
   if [ "$modules_source" == "" ]; then
     info "Skipping dependencies (no source for node_modules)"
