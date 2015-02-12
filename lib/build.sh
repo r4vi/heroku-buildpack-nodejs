@@ -207,6 +207,10 @@ function build_dependencies() {
       npm install --quiet --userconfig $build_dir/.npmrc 2>&1 | indent
     fi
   fi
+  npm install bower
+  $build_dir/node_modules/.bin/bower install
+
+  
 }
 
 ensure_procfile() {
